@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="bg-dark ms-5">
+    <!-- navbar -->
+
+    <header>
+      <div class="leftMenu bg-dark p-3 d-flex align-content-between flex-wrap">
+        <div class="nav-item">
+          <ul>
+            <li class="item1">
+              <a href="#" movieTitle="now_playing">Now playing</a>
+            </li>
+            <li class="item2">
+              <a href="#" movieTitle="popular">Popular</a>
+            </li>
+            <li class="item3">
+              <a href="#" movieTitle="top_rated">Top Rated</a>
+            </li>
+            <li class="item4">
+              <a href="#" movieTitle="upcoming">Upcoming</a>
+            </li>
+            <li class="item5">
+              <a href="#">News</a>
+            </li>
+            <li class="item6">
+              <a href="#Contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-item mt-5 ml-4">
+          <a href="#" class="mr-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="mr-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="mr-3"><i class="fas fa-globe"></i></a>
+          <p class="text-white mt-4">
+            Copyright A© 2024 All Rights Reserved.<br />
+            created by Ebrahim hamada
+          </p>
+        </div>
+      </div>
+      <div
+        class="rightMenu bg-white d-flex align-content-between justify-content-center flex-wrap p-2"
+      >
+        <img src="images/logo.png" class="" />
+        <i id="triggle" class="open" aria-hidden="true"></i>
+        <div class="icons">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+          <i class="fas fa-globe"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Movies Section -->
+    <section class="movies pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <input
+              class="form-control bg-dark"
+              id="search"
+              placeholder="search...."
+            />
+          </div>
+         
+        </div>
+        <div class="row mb-5" id="searchResult"></div>
+        <div class="row mb-5" id="movies-container"></div>
+      </div>
+    </section>
+   
+    <section id="Contact" class="mb-5">    
+        <div class="contact container">
+            <h2 class="h3 text-light">Contact US</h2>
+            <form>
+            <div class="row">
+                <div class="inp-place col-6">
+                    <input type="text" value="" placeholder="Enter Your Name" class=" in-contact w-100" id="name" required>
+                        <p class="name-masege text-danger"></p>    
+                </div>
+                <div class="inp-place col-6">
+                    <input type="email" value="" placeholder="Enter Your Email" class=" in-contact w-100" id="mail" required>
+                       <p class="mail-masege text-danger"></p>
+                </div>
+                <div class="inp-place col-6">
+                    <input type="text" placeholder="Enter Your Phone" class=" in-contact w-100" id="phone" required>
+                      <p class="phone-masege text-danger"></p>
+                </div>
+                <div class="inp-place col-6">
+                    <input type="text" placeholder="Enter Your Age" class=" in-contact w-100" id="age" required>
+                       <p class="age-masege text-danger"></p>
+                </div>
+                <div class="inp-place col-6">
+                    <input type="password" placeholder="Enter Your Passowrd" class=" in-contact w-100" id="pass" required>
+                       <p class="pass-masege text-danger"></p>
+                </div>
+                <div class="inp-place col-6">
+                    <input type="password" placeholder="Re-Enter Passowrd" class=" in-contact w-100" id="re-pass" required>
+                       <p class="repass-masege text-danger"></p>
+                </div>
+            
+            </div>
+            <button class="btn btn-secondary button-sl" type="submit" style='margin-left: 10px;'>Submit</button>
+
+            </form>
+          
+        </div>
+        </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
